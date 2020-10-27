@@ -211,7 +211,7 @@
 			margin-bottom: 30px;
 			left: 0;
 		}
-
+ 
 	}
 
 

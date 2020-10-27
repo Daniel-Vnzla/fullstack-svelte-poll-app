@@ -124,6 +124,19 @@
 		opacity: 1;
 	}
 
+	@media (max-width: 600px){
+
+		.answer {
+			font-size: 1.2rem;
+			padding: 15px 15px;
+		}
+
+		.answer::after {
+			font-size: 1.5rem;
+		}
+ 
+	}
+
 
 	
 </style>
