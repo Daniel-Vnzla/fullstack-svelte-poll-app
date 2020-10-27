@@ -96,6 +96,8 @@
 	}
 
 	.poll .question {
+		margin-top: 10px;
+		word-break: break-word;
 		color: #1196c1;
 		font-size: 1.8rem;
 	}

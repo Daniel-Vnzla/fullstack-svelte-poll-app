@@ -36,6 +36,32 @@
   };
 </script>
 
+
+<div class="container">
+  <h2 class="title">Make a question that another can answer</h2>
+  <form on:submit|preventDefault={handleSubmit}>
+    <div class="form-field" data-error={errors.question}>
+      <label for="Question">Question Poll</label>
+      <input maxlength="40" type="text" bind:value={fields.question} />
+      <p class="length">{fields.question.length}/40</p>
+    </div>
+    <div class="form-field" data-error={errors.answerA}>
+      <label for="Answer A">Answer A:</label>
+      <input maxlength="25" type="text" bind:value={fields.answerA} />
+      <p class="length">{fields.answerA.length}/25</p>
+    </div>
+    <div class="form-field" data-error={errors.answerB}>
+      <label for="Answer B">Answer B:</label>
+      <input maxlength="25" type="text" bind:value={fields.answerB} />
+      <p class="length">{fields.answerB.length}/25</p>
+    </div>
+    <button disabled={submitting || !$userData.username} type="submit">
+      Add Poll
+    </button>
+  </form>
+</div>
+
+
 <style>
   .container {
     padding-top: 50px;
@@ -43,7 +69,7 @@
     margin: 0 auto;
   }
 
-  .head {
+  .title {
     text-align: center;
     color: var(--primary);
     font-size: 2rem;
@@ -83,7 +109,7 @@
     color: var(--primary);
     width: 100%;
     font-size: 1.7rem;
-    padding: 10px 10px;
+    padding: 10px;
     border: solid 1px var(--primary);
     border-radius: 6px;
   }
@@ -101,29 +127,25 @@
     padding: 10px 22px;
     cursor: pointer;
   }
-</style>
 
-<div class="container">
-  <h2 class="head">Make a question that another can answer</h2>
-  <form on:submit|preventDefault={handleSubmit}>
-    <div class="form-field" data-error={errors.question}>
-      <label for="Question">Question Poll</label>
-      <input maxlength="40" type="text" bind:value={fields.question} />
-      <p class="length">{fields.question.length}/40</p>
-    </div>
-    <div class="form-field" data-error={errors.answerA}>
-      <label for="Answer A">Answer A:</label>
-      <input maxlength="25" type="text" bind:value={fields.answerA} />
-      <p class="length">{fields.answerA.length}/25</p>
-    </div>
-    <div class="form-field" data-error={errors.answerB}>
-      <label for="Answer B">Answer B:</label>
-      <input maxlength="25" type="text" bind:value={fields.answerB} />
-      <p class="length">{fields.answerB.length}/25</p>
-    </div>
-    <button disabled={submitting || !$userData.username} type="submit">
-      Add Poll
-    </button>
-  </form>
-</div>
+  @media (max-width: 600px){
+
+    form {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 1.6rem;
+    }
+
+    .form-field label {
+      font-size: 1.2rem;
+    }
+
+    input {
+      padding: 5px;
+    }
+  
+  }
+</style>
 

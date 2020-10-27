@@ -211,6 +211,10 @@
 			margin-bottom: 30px;
 			left: 0;
 		}
+
+		li {
+			font-size: .9rem;
+		}
  
 	}
 
