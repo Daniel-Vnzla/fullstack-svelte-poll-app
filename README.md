@@ -1,3 +1,19 @@
+## Description
+
+This is a application for create polls that everyone can vote
+
+## Features 
+
+ User:
+ - Authentication 
+ - Authorization with json Web Token
+
+ Polls:
+ - Get polls
+ - Create polls
+ - Delete polls
+ - Update votes in polls
+
 ## My API: 
 https://github.com/Daniel-Vnzla/CRUD-poll-api
 
