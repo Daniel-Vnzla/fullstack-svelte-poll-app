@@ -132,13 +132,6 @@
 		justify-content: space-between;
 	}
 
-	@media (max-width: 600px){
-
-		html {
-			font-size: .5rem;
-		}
-
-	}
 
 	
 

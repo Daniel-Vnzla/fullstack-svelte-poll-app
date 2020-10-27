@@ -144,6 +144,7 @@
 
 	ul {
 		display: flex;
+
 		justify-content: center;
 	}
 
@@ -201,5 +202,17 @@
 	.list .item:hover {
 		background: #54c6eba8;
 	}
+
+	@media (max-width: 600px){
+
+		.search {
+			width: 100%;
+			position: relative;
+			margin-bottom: 30px;
+			left: 0;
+		}
+
+	}
+
 
 </style>

@@ -5,6 +5,7 @@
 	import { flip } from 'svelte/animate';
 	import PollDetails from './PollDetails.svelte';
 	import Loading from './Loading.svelte';
+
 	export let polls = [];
 	export let loadingMorePolls = false;
 	export let noMoreItems = false;
@@ -59,8 +60,7 @@
 	@media (max-width: 600px){
 
 		.poll-list {
-		grid-template-columns: repeat(1,1fr);
-			background: #000;
+			grid-template-columns: repeat(1,1fr);
 		}
 	}
 </style>
