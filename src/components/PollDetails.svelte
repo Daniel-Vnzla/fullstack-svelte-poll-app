@@ -78,12 +78,6 @@
 </Card>
 
 <style>
-	/* .userNoRegister {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		z-index: 900;
-	} */
 
 	.poll {
 		position: relative;
@@ -132,6 +126,13 @@
 		justify-content: space-between;
 	}
 
+	@media (max-width: 600px){
+
+	.poll .question {
+		font-size: 1.6rem;
+	}
+ 
+	}
 
 	
 
