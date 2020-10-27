@@ -71,7 +71,6 @@
 	.container {
 		display: inline-block;
 		position: relative;
-		z-index: 10000;
 	}
 
 	.container .active {
@@ -172,5 +171,22 @@
 		border-style: none;
 		cursor: pointer;
 		outline: none;
+	}
+
+
+
+	@media (max-width: 600px){
+
+		form {
+			position: fixed;
+			width: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transform: translate(0,0);
+			z-index: 10000;
+		}
+	
 	}
 </style>

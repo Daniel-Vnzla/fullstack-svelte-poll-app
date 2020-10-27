@@ -128,9 +128,13 @@
 
 	@media (max-width: 600px){
 
-	.poll .question {
-		font-size: 1.6rem;
-	}
+		.poll .question {
+			font-size: 1.6rem;
+		}
+
+		p {
+			font-size: .8rem;
+		}
  
 	}
 

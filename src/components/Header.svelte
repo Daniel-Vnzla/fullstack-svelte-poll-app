@@ -96,7 +96,14 @@
 	.manu .menu-wrapper{
 		display: flex;
 	}
+		
+	@media (max-width: 600px){
+
+		header {
+			font-size: 1rem;
+		}
 	
+	}
 
 
 	
