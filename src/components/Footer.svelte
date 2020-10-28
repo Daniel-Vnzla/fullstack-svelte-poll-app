@@ -19,6 +19,6 @@
 </style>
 
 <footer bind:this={footer}>
-  <h6 class="copyright">Copyright 2020 Poll Ninja</h6>
+  <h6 class="copyright">Created by Yordinson Polar</h6>
 </footer>
 
