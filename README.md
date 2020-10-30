@@ -16,7 +16,7 @@ This is a application for create polls that everyone can vote
  - Update votes in polls
  
  Extra: 
- infinite scroll
+ - infinite scroll
 
 ## My API: 
 https://github.com/Daniel-Vnzla/CRUD-poll-api
