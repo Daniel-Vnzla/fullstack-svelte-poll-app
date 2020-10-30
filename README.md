@@ -10,9 +10,13 @@ This is a application for create polls that everyone can vote
 
  Polls:
  - Get polls
+ - Get a especific poll
  - Create polls
  - Delete polls
  - Update votes in polls
+ 
+ Extra: 
+ infinite scroll
 
 ## My API: 
 https://github.com/Daniel-Vnzla/CRUD-poll-api
